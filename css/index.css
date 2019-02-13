@@ -1,0 +1,14 @@
+.container{
+	width: 1070px;
+	margin: 0 auto;
+}
+#top_wrapper{
+    height: 30px;
+    background: #f4f4f4;
+    border: 1px solid #e5e5e5;
+}
+.top{
+    height: 30px;
+    line-height: 30px;
+    
+}
