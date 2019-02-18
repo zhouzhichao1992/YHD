@@ -1,0 +1,60 @@
+.container{
+	width: 1070px;
+	margin: 0 auto;
+}
+#top_wrapper{
+    height: 30px;
+    background: #f4f4f4;
+    border: 1px solid #e5e5e5;
+}
+.top{
+    height: 30px;
+    line-height: 30px;
+}
+.l1{
+    float: left;
+    margin-left: 30px;
+}
+.l2{
+    float: left;
+    margin-left: 50px;
+    width: 238px;
+}
+
+.hd_topbar_right{
+    float: right;
+    width: 338px;
+}
+.hd_unlogin{
+    float: left; 
+}
+.hd_login_link{
+    color: red;
+    margin-right: 20px;
+}
+.hd_regist_link{
+    color: #aaaaaa;
+    margin-right: 20px;
+}
+.hd_menu{
+    float: left;
+    margin-right: 20px;
+
+}
+#header_wrapper{
+	height: 142px;
+}
+.header{
+	height: 142px;
+}
+.logo{
+	width: 92px;
+	height: 86px;
+	float: left;
+}
+.logo a{
+	display:block;
+	width:92px;
+	height:86px;
+	text-indent:-9999px;
+}
