@@ -18,7 +18,9 @@
 .l2{
     float: left;
     margin-left: 50px;
+    width: 238px;
 }
+
 .hd_topbar_right{
     float: right;
     width: 338px;
@@ -38,4 +40,21 @@
     float: left;
     margin-right: 20px;
 
+}
+#header_wrapper{
+	height: 142px;
+}
+.header{
+	height: 142px;
+}
+.logo{
+	width: 92px;
+	height: 86px;
+	float: left;
+}
+.logo a{
+	display:block;
+	width:92px;
+	height:86px;
+	text-indent:-9999px;
 }
