@@ -112,8 +112,8 @@
     font-size: 14px;
 }
 #main_wrapper{
-    height: 717px;
-    background: url(../shopping/killing_bg.png) no-repeat center;
+    height: 2620px;
+    background: url(../shopping/killing_bg.png) no-repeat;
     z-index: 1;
 }
 .main{
@@ -137,7 +137,7 @@
     font-size: 36px;
 }
 .buy ul{
-
+    
 }
 .buying li:nth-of-type(1){
     margin-left: 234px;
@@ -171,7 +171,7 @@
 
 
 
-.list{
+.goods{
     width: 1230px;
     margin:50px auto;
     min-height: 300px;
@@ -179,12 +179,11 @@
     position: absolute;
     top: 350px;
     background: #f9f9f9;
-    display: none;
 }
-.list ul {
+.goods ul {
     width: 1230px;
 }
-.list ul li{
+.goods ul li{
     width: 280px;
     overflow: hidden;
     margin-left: 21px;
@@ -193,29 +192,29 @@
     border-radius: 3px;
     background: #ffffff;
 }
-.list ul li img{
+.goods ul li img{
     width: 223px;
     height: 223px;
     margin: 30px;
 }
-.list ul li p{
+.goodslist ul li p{
     font-size: 12px;
     padding-left: 5px;
     line-height: 20px;
 }
-.list ul li p:nth-of-type(2){
+.goods ul li p:nth-of-type(2){
     height: 60px;
     line-height: 60px;
 }
-.list ul li p:nth-of-type(2) span:nth-of-type(1){
+.goods ul li p:nth-of-type(2) span:nth-of-type(1){
     font-size: 18px;    
     color: #ff834f;
 }
-.list ul li p:nth-of-type(2) span:nth-of-type(2){
+.goods ul li p:nth-of-type(2) span:nth-of-type(2){
     text-decoration: line-through;
     color: #8c8c8c;
 }
-.list ul li p:last-child{
+.goods ul li p:last-child{
     line-height: 40px;
     font-size: 18px;
     text-align: center;
@@ -224,7 +223,92 @@
     color: #ffffff;
     cursor: pointer;
 }
-.list ul li p:last-child:hover{
+.goods ul li p:last-child:hover{
     font-size: 20px;
 }
+#footer_wrapper{
+    
+}
+.f_top{
+    width: 1230px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.f_top a{
+    position: relative;
+    width: 197px;
+
+
+}
+.f_top a b{
+    position: absolute;
+    left: 94px;
+    top:12px;
+    width: 100px;
+}
+.f_top a span{
+    position: absolute;
+    left: 94px;
+    top:40px;
+    width: 100px;
+}
+.f_center{
+    border-top: 1px solid #ebebeb;
+    margin-top: 30px;
+    padding-top: 25px;
+}
+.f_center .words {
+    float: left;
+    width: 800px;
+    height: 200px;
+    
+}
+.f_center .words ul{
+    float: left;
+    width: 170px;
+    padding-left: 22px;
+}
+.f_center .words ul li:first-child{
+    height: 28px;
+    font-weight: 900;
+    font-size: 14px;
+    color: #000000;
+}
+.f_center .words ul li{
+    height: 24px;
+    line-height: 24px;
+    color: #666666;
+}
+.f_center .img {
+    float: left;
+    width: 430px;
+    height: 200px;
+    
+}
+.f_center .img .erweima{
+    float: left;
+    padding-right: 60px;
+}
+.f_center .img .erweima p{
+    height: 28px;
+    font-weight: 900;
+    font-size: 14px;
+    color: #000000;   
+}
+.f_bottum{
+    height: 275px;
+}
+.f_bottum p{
+    text-align: center;
+    padding: 8px 0;
+
+}
+.f_bottum small{
+    padding:20px 0 20px 400px;
+
+}
+
+
+
 

@@ -11,7 +11,8 @@ h1,h2,h3,h4,h5,h6,b,strong{
 	font-size:100%;	
 }
 i,em{
-	font-style:normal;	
+	font-style:normal;
+	font:12px	
 }
 li{
 	list-style:none;	

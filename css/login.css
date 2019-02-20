@@ -1,0 +1,129 @@
+//万能清除法
+.clearfix:after{
+	content : ".";
+	height: 0;
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix{
+	zoom: 1;
+}
+#loginTop{
+	height: 48px;
+	width: 1315px;
+	padding: 16px;
+	border: 1px solid #e1e1e1 ;
+	margin: 0 auto;
+}
+#loginTop img{
+	width: 145px;
+	height: 55px;
+	margin-left: 50px;
+	float: left;
+}
+#loginTop ul{
+		float: right;
+		margin-right: 35px;
+}
+#loginTop ul li{
+	float: left;
+	margin-left: 30px;
+	height: 48px;
+	line-height: 48px;
+}
+.loginText{
+	color: red;
+}
+#loginMidden{
+	width: 1349px;
+	height: 403px;
+	margin: 0 auto;
+	padding-top: 36px;
+}
+#loginMidden img{
+	margin-left: 180px;
+	padding-top: 45px;
+	float: left;
+}
+#loginMidden .login{
+	width: 330px;
+	height: 358px;
+	float: right;
+	margin-right: 180px;
+	padding: 45px 35px 0;
+}
+.login span{
+	float: left;
+	font-size: 12px;
+	color: #666666;
+	font-weight: 700;
+}
+.login .reg{
+	float: right;
+	color: #00AAFF;
+}
+.login from{
+	height: 215px;
+	float: left;
+}
+.login input{
+	border: 1px solid #e1e1e1;
+	padding: 14px 18px;
+	height: 24px;
+	width: 292px;
+	margin-bottom: 10px;
+}
+.login #submit{
+	padding: 14px 18px;
+	width: 330px;
+	height: 54px;
+	color: #fff;
+	font-size: 16px;
+	background: red;
+}
+.login .checked{
+	width: 12px;
+	height: 12px;
+	background: #fff;
+	color: #666;
+}
+.login .wjmm{
+	float: right;
+	color: #e1e1e1;
+}
+.login .sf{
+	float: left;
+}
+.login .sfdl{
+	float: left;
+	margin-top: 30px;
+}
+.login .sfdl .icon-QQ,
+.login .sfdl .icon-weixindenglu,
+.login .sfdl .icon-jingdong-{
+	float: left;
+	font-size: 32px;
+	margin-right: 67px;
+}
+.login .sfdl .icon-icon_xinlang-chunselogo{
+	float: left;
+	font-size: 32px;
+	color: #F60726;
+}
+.login .sfdl .icon-QQ{
+	color: #00AAFF;
+}
+.login .sfdl .icon-weixindenglu{
+	color: #00CF33;
+}
+.login .sfdl .icon-jingdong-{
+	color: #DE0000;
+}
+#loginBottom{
+	margin-top: 20px;
+	text-align: center;
+}
+#loginBottom p{
+	margin-top: 10px;
+}

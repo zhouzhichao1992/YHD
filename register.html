@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<script src="js/animate10.0.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/register.js"></script>
+
+		<title></title>
+	</head>
+	<body>
+		<div id="registerTop">
+			<img src="image/5c0531cbN7380a580.jpg" />
+			<ul>
+				<li>您好，欢迎光临1号店！<a href="login.html" class="loginText">请登录</a></li>
+				<li><a href="#">帮助中心</a></li>
+			</ul>
+		</div>
+		<div id="registerMidden">
+			<div class="registerText">
+				<h2>1号店注册</h2>
+				<form  action="php/register.php" method="post" >
+					<ul>
+						<li>
+							<input type="text" id="userName" name="userName">
+							<span  id="userNameText">用户名</span>
+							<div>
+								<span id="info_user" class="info info_user">请输入用户名，4~20位，由中文、英文、数字或符号"_"组成</span>
+								<span id="error_user" class="error error_user">输入错误，请重新输入!</span>
+								<span id="wu_user" class="error error_user">用户名不能为空</span>
+							</div>
+							<span id="succ" >√</span>
+						</li>
+						<li>
+							<input type="text" id="phone">
+							<span  id="phoneText">手机号</span>
+							<div>
+							<span id="info_phone">请填写正确的手机号，以便接收订单信息已及找回密码</span>
+							<span id="error_phone" class="error error_user">输入错误，请重新输入!</span>
+							</div>
+							<span id="succ" >√</span>
+						</li>
+						<li>
+							<input type="password" id="pwd" name="pwd">
+							<span  id="pwdText">设置密码</span>
+							<div>
+								<span id="info_pwd">6~20位，由英文、数字或符号组成</span>
+								<span id="wu_user" class="error error_user">密码不能为空</span>
+								<span id="error_pwd">输入错误，请重新输入!</span>
+							</div>
+							<span id="succ" >√</span>
+						</li>
+						<li>
+							<input type="password" id="pwds">
+							<span  id="pwdsText">确认密码</span>
+							<div>
+							<span id="info_pwds">再次输入密码</span>
+							<span id="wu_pwds" class="error error_user">密码不能为空</span>
+							<span id="error_pwds" class="error error_user">两次输入不一致</span>
+							</div>
+							<span id="succ" >√</span>
+						</li>
+						<p>点击注册，表示您同意1号店<a href="#">《服务协议及隐私声明》</a></p>
+						<li>
+							<input type="submit" value="同意协议并注册" id="sub"/>
+						</li>
+					</ul>	
+				</form>
+			</div>
+		</div>
+		<div id="registerBottom">
+			<span><a href="#">泸ICP备160504246号</a>&nbsp;| <a href="#">泸B2-20170039</a>&nbsp;|<a href="#">营业执照</a></span>
+			<p>Copyright&copy;1号店网上超市 2017-2018,All Rights Reserved</p>
+		</div>
+	</body>
+</html>
