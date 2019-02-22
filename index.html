@@ -9,825 +9,502 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/iconfont.css" />
     <link rel="stylesheet" href="css/index.css">
-
+    <script src="js/jquery.min.js"></script>
+    <script src="js/public.js"></script>
+    <script src="js/promiseAjax.js"></script>
+    <script src="js/rendering.js"></script>
+    <script src="js/index.js"></script>
 </head>
 
 <body>
-    <div id="top_wrapper">
-        <div class="top container">
-            <a class="l1">
-                <i class="iconfont icon-zuobiao"></i>
-                <span>送货地址&nbsp;:</span>
-                <em>上海</em>
-            </a>
-            <ul class="l2">
-                <i class="iconfont icon-laba"></i>
-                <a href="#">
-                    <span>
-                        提醒：商家配送可能延误以商家为准
-                    </span>
-                </a>
-            </ul>
-            <div class="hd_topbar_right">
-                <div class="hd_unlogin">
-                    <span class="hd_hi">早上好,请</span>
-                    <a href="#" class="hd_login_link">登录&nbsp;</a>
-                    <a href="#" class="hd_regist_link">&nbsp;注册</a>
-                </div>
-                <div class="hd_menu">
-                    <a href="#">
-                        <i class="iconfont icon-huiyuan-copy"></i>
-<<<<<<< HEAD
-                        <span>会员俱乐部</span>
-                    </a>
-                </div>
-                <div class="hd_menu">
-                    <a href="#">
-                        <i class="iconfont icon-dingdan"></i>
-                        <span>我的订单</span>
-                    </a>
-=======
-                        <span class="text">会员俱乐部</span>
-                    </a>
-                </div>
-                <div class="hd_menu">
-                    <a href="#"> 
-                        <i class="iconfont icon-dingdan"></i>
-                        <span class="text">我的订单</span>
-                        </a>
->>>>>>> a1f4f976d573886a0158cc7fd11f03fa6b2f84e8
+    <div id="top">
+        <div class="container">
+            <div id="top_left">
+                <ul >
+                <li class="topText"><a href="#"><i class="iconfont icon-dingweilocalization4"></i>送货地址&nbsp;:&nbsp;<span id="city">深圳市</span></a></li>
+                <li class="topText"><a href="#"><i class="iconfont icon-gonggao"></i>1号店金币过期公告</a></li>
+                </ul>
+            </div>
+            <div id="top_right">
+                <ul>
+                    <li class="topText errlogin">您好，<a href="login.html" id="login">&nbsp;登录</a></li>
+                    <li class="topText"><a href="register.html" id="register">注册</a></li>
+                    <li class="topText"><a href="#"><i class="iconfont icon-huiyuan1"></i>会员俱乐部</a></li>
+                    <li class="topText"><a href="#"><i class="iconfont icon-tubiaolunkuo-"></i>我的订单</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--搜索-->
+    <div class="search container">
+        <div class="search_left">
+            <a href="#"><img src="img/logo.png" style="height: 140px;"></a>
+            <a href="#"><img src="img/logo_2.jpg" style="height: 90px; margin-bottom: 25px;"></a>
+        </div>
+        <div class="search_reight">
+            <div class="searchMian">
+                <div class="textInput">
+                    <input type="text" value="" /><i class="iconfont icon-fangdajing"></i></div>
+                <div class="goShpping">
+                    <i class="iconfont icon-daohanggouwuche"></i>
+                    <span>购物车</span>
+                    <div id="sNum">0</div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="second_wrapper">
-        <div class="second container">
-            <div class="logo">
-                <img src="image/logo.png" alt="" style="width: 140px;">
-            </div>
-            <div class="logo1">
-                <img src="image/logo-1.gif" alt="" style="width: 150px;">
-            </div>
-            <div class="search">
-                <input type="text" placeholder="dell显示器"><a><i class="iconfont icon-fangdajing fdj"></a></i>
-            </div>
-            <div class="cart"><i class="iconfont icon-gouwuchekong"></i><a href="#">购物车</a></div>
-        </div>
-        <ul class="hot">
-            <li><a href="#">大盘卷纸</a></li>
-            <li><a href="#">厕纸</a></li>
-            <li><a href="#">印花纸巾</a></li>
-            <li><a href="#">吸水纸</a></li>
-            <li><a href="#">网络电视</a></li>
-            <li><a href="#">懒人桌</a></li>
-            <li><a href="#">晒衣</a></li>
-        </ul>
-    </div>
-    <!-- 导航 -->
+    <!--导航-->
     <div class="nav container">
-        <div>
-            <div class="categoryBox">全部类目</div>
-            <div class="category-list" style="display: none;">
-                    <div class="column-item">
-                        <div class="category-item">
-                            <div class="inner">
-                                <p class="title" data-tpa="YHD_GLOBAl_HEADER_CATEGORY_1" data-mrt="1" categoryid="1741"
-                                    index="1">
-                                    <a title="全球进口" href="//search.yhd.com/c0-0-1003817/" target="_blank"
-                                        data-ref="CatMenu_Search_100000014_1741"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_1741.1"
-                                        clstag="pageclick|keycount|shouye_20181018|PrimaryCate1">全球进口</a>
-                                </p>
-                                <ul id="floatCategory1741" categoryid="1741" index="1">
-                                    <li class="text">
-                                        <a categoryid="5326" href="//search.yhd.com/c0-0-1003298/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate1_SecondaryCate1">乳品生鲜</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="5337" href="//search.yhd.com/c0-0-1004174/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate1_SecondaryCate2">饼干糕点</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="5344" href="//search.yhd.com/c0-0-1004071/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate1_SecondaryCate3">酒水饮料</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="5366" href="//search.yhd.com/c0-0-1004099/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate1_SecondaryCate4">休闲零食</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="7282" href="//search.yhd.com/c0-0-1003820/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate1_SecondaryCate5">糖果巧克力</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="2146" href="//search.yhd.com/c0-0-1003844/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate1_SecondaryCate6">粮油调味</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="7401" href="//search.yhd.com/c15053-0-0/" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate1_SecondaryCate7">咖啡冲饮</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="7309" href="//search.yhd.com/c0-0-1003957/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate1_SecondaryCate8">麦片冲饮</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="5381" href="//search.yhd.com/c0-0-1004487/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate1_SecondaryCate9">母婴玩具</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="5389" href="//search.yhd.com/c0-0-1005276/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate1_SecondaryCate10">美妆个护</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="5401" href="//search.yhd.com/c0-0-1005289/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate1_SecondaryCate11">家居清洁</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="category-item">
-                            <div class="inner">
-                                <p class="title" data-tpa="YHD_GLOBAl_HEADER_CATEGORY_2" data-mrt="1" categoryid="1621"
-                                    index="2">
-                                    <a title="食品" href="http://search.yhd.com/c1320-0-0" target="_blank"
-                                        clstag="pageclick|keycount|shouye_20181018|PrimaryCate2"
-                                        data-ref="CatMenu_Search_100000014_1621_3025"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_1621.1">食品</a>
-                                    /
-                                    <a title="酒" href="http://search.yhd.com/c12259-0-0" target="_blank"
-                                        clstag="pageclick|keycount|shouye_20181018|PrimaryCate2"
-                                        data-ref="CatMenu_Search_100000014_1621_3026"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_1621.2">酒</a>
-                                    /
-                                    <a title="生鲜" href="http://search.yhd.com/c12218-0-0" target="_blank"
-                                        clstag="pageclick|keycount|shouye_20181018|PrimaryCate2"
-                                        data-ref="CatMenu_Search_100000014_1621_3027"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_1621.3">生鲜</a>
-                                </p>
-                                <ul id="floatCategory1621" categoryid="1621" index="2">
-                                    <li class="text">
-                                        <a categoryid="1690" href="//search.yhd.com/c0-0-1003766/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate2_SecondaryCate1">饮料</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="8965" href="//search.yhd.com/c0-0-1003646/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate2_SecondaryCate2">酒类</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="1627" href="//search.yhd.com/c0-0-1003327/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate2_SecondaryCate3">休闲零食</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="1663" href="//search.yhd.com/c0-0-1004912/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate2_SecondaryCate4">粮油干货</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="1633" href="//search.yhd.com/c0-0-1003339/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate2_SecondaryCate5">厨房调料</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="1686" href="//search.yhd.com/c0-0-1003746/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate2_SecondaryCate6">饼干糕点</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="1730" href="//search.yhd.com/c0-0-1003847/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate2_SecondaryCate7">牛奶乳品</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="1715" href="//search.yhd.com/c0-0-1003801/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate2_SecondaryCate8">茶冲咖啡</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="1792" href="//search.yhd.com/c0-0-1008414/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate2_SecondaryCate9">肉蛋海鲜</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="1757" href="//search.yhd.com/c0-0-1008407/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate2_SecondaryCate10">新鲜蔬果</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="1651" href="//search.yhd.com/c0-0-1003553/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate2_SecondaryCate11">方便速食</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="1813" href="//search.yhd.com/c0-0-1004802/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate2_SecondaryCate12">乳品速食</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column-item">
-                        <div class="category-item">
-                            <div class="inner">
-                                <p class="title" data-tpa="YHD_GLOBAl_HEADER_CATEGORY_3" data-mrt="1" categoryid="1504"
-                                    index="3">
-                                    <a title="母婴" href="http://sale.yhd.com/act/VwKQZXJWq5Yj.html" target="_blank"
-                                        clstag="pageclick|keycount|shouye_20181018|PrimaryCate3"
-                                        data-ref="CatMenu_Search_100000014_1504_2801"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_1504.1">母婴</a>
-                                    /
-                                    <a title="玩具" href="http://search.yhd.com/c6233-0-0" target="_blank"
-                                        clstag="pageclick|keycount|shouye_20181018|PrimaryCate3"
-                                        data-ref="CatMenu_Search_100000014_1504_2802"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_1504.2">玩具</a>
-                                    /
-                                    <a title="童装" href="http://search.yhd.com/c11842-0-0" target="_blank"
-                                        clstag="pageclick|keycount|shouye_20181018|PrimaryCate3"
-                                        data-ref="CatMenu_Search_100000014_1504_2803"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_1504.3">童装</a>
-                                </p>
-                                <ul id="floatCategory1504" categoryid="1504" index="3">
-                                    <li class="text">
-                                        <a categoryid="7745" href="https://search.yhd.com/c1523-0-0" target="_blank"
-                                            nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate3_SecondaryCate1">奶粉</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="7754" href="https://search.yhd.com/c1524-0-0" target="_blank"
-                                            nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate3_SecondaryCate2">营养辅食</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="7763" href="https://search.yhd.com/c1525-0-0" target="_blank"
-                                            nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate3_SecondaryCate3">尿裤湿巾</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="7784" href="https://search.yhd.com/c1527-0-0" target="_blank"
-                                            nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate3_SecondaryCate4">洗护用品</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="7774" href="https://search.yhd.com/c1526-0-0" target="_blank"
-                                            nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate3_SecondaryCate5">喂养用品</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="7803" href="//search.yhd.com/c4997-0-0" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate3_SecondaryCate6">妈妈专区</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="7797" href="//search.yhd.com/c6313-0-0" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate3_SecondaryCate7">寝具服饰</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="7812" href="//search.yhd.com/c1528-0-0" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate3_SecondaryCate8">童车童床</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="7845" href="//search.yhd.com/c6233-0-0" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate3_SecondaryCate9">玩具</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="7861" href="//search.yhd.com/c6291-0-0" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate3_SecondaryCate10">乐器</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="7823" href="//search.yhd.com/c0-0-1007405" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate3_SecondaryCate11">童装/童鞋</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="category-item">
-                            <div class="inner">
-                                <p class="title" data-tpa="YHD_GLOBAl_HEADER_CATEGORY_4" data-mrt="1" categoryid="3212"
-                                    index="4">
-                                    <a title="纸巾" href="http://search.yhd.com/c1671-0-0" target="_blank"
-                                        clstag="pageclick|keycount|shouye_20181018|PrimaryCate4"
-                                        data-ref="CatMenu_Search_100000014_3212_5269"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_3212.1">纸巾</a>
-                                    /
-                                    <a title="厨卫清洁" href="http://sale.yhd.com/act/8zwSJDcQ0gLT.html" target="_blank"
-                                        clstag="pageclick|keycount|shouye_20181018|PrimaryCate4"
-                                        data-ref="CatMenu_Search_100000014_3212_5270"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_3212.2">厨卫清洁</a>
-                                    /
-                                    <a title="宠物" href="http://search.yhd.com/c6994-0-0" target="_blank"
-                                        clstag="pageclick|keycount|shouye_20181018|PrimaryCate4"
-                                        data-ref="CatMenu_Search_100000014_3212_5271"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_3212.3">宠物</a>
-                                </p>
-                                <ul id="floatCategory3212" categoryid="3212" index="4">
-                                    <li class="text">
-                                        <a categoryid="3225" href="//search.yhd.com/c0-0-1003297/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate4_SecondaryCate1">纸品湿巾</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="3252" href="//search.yhd.com/c0-0-1003313/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate4_SecondaryCate2">衣物清洁</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="3234" href="//search.yhd.com/c0-0-1003309/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate4_SecondaryCate3">家庭清洁</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="5442" href="//search.yhd.com/c1667-0-0" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate4_SecondaryCate4">清洁用具</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="4950" href="//search.yhd.com/c0-0-1004868/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate4_SecondaryCate5">驱虫除湿</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="5472" href="//search.yhd.com/c0-0-1005419/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate4_SecondaryCate6">皮具护理</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="6855" href="//search.yhd.com/c0-0-1004415/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate4_SecondaryCate7">宠物生活</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="6872" href="//search.yhd.com/c0-0-1006020/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate4_SecondaryCate8">绿植园艺</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column-item">
-                        <div class="category-item">
-                            <div class="inner">
-                                <p class="title" data-tpa="YHD_GLOBAl_HEADER_CATEGORY_5" data-mrt="1" categoryid="1746"
-                                    index="5">
-                                    <a title="家居家纺"
-                                        href="http://search.yhd.com/c0-0-1004097/mbname-b/a-s1-v4-p1-price-d0-f0-m1-rt0-pid-mid0-color-size-k/"
-                                        target="_blank" clstag="pageclick|keycount|shouye_20181018|PrimaryCate5"
-                                        data-ref="CatMenu_Search_100000014_1746_5045"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_1746.1">家居家纺</a>
-                                    /
-                                    <a title="厨具" href="http://search.yhd.com/c0-0-1003989/" target="_blank"
-                                        clstag="pageclick|keycount|shouye_20181018|PrimaryCate5"
-                                        data-ref="CatMenu_Search_100000014_1746_5046"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_1746.2">厨具</a>
-                                    /
-                                    <a title="家具" href="http://search.yhd.com/c0-0-1004247/" target="_blank"
-                                        clstag="pageclick|keycount|shouye_20181018|PrimaryCate5"
-                                        data-ref="CatMenu_Search_100000014_1746_5047"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_1746.3">家具</a>
-                                </p>
-                                <ul id="floatCategory1746" categoryid="1746" index="5">
-                                    <li class="text">
-                                        <a categoryid="8213" href="//search.yhd.com/c15249-0-0" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate5_SecondaryCate1">床上用品</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="8230" href="//search.yhd.com/c1624-0-0" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate5_SecondaryCate2">生活日用</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="8240"
-                                            href="//search.yhd.com/c0-0/k%25E9%2594%2585%25E5%2585%25B7%25E6%25B0%25B4%25E5%2585%25B7/"
-                                            target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate5_SecondaryCate3">锅具水具</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="8250"
-                                            href="//search.yhd.com/c0-0/k%25E5%258E%25A8%25E5%2585%25B7%25E5%2588%2580%25E5%2585%25B7/"
-                                            target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate5_SecondaryCate4">厨具刀具</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="8259"
-                                            href="//search.yhd.com/c0-0/k%25E8%258C%25B6%25E5%2585%25B7%25E9%25A4%2590%25E5%2585%25B7/"
-                                            target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate5_SecondaryCate5">茶具餐具</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="8267" href="//search.yhd.com/c11158-0-0" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate5_SecondaryCate6">家装软饰</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="8275" href="//search.yhd.com/c9847-0-0" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate5_SecondaryCate7">品质家具</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="8286" href="//search.yhd.com/c9855-0-0" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate5_SecondaryCate8">家装建材</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="category-item">
-                            <div class="inner">
-                                <p class="title" data-tpa="YHD_GLOBAl_HEADER_CATEGORY_6" data-mrt="1" categoryid="1740"
-                                    index="6">
-                                    <a title="美妆" href="http://sale.yhd.com/act/uf0DFM6Iahpn.html" target="_blank"
-                                        clstag="pageclick|keycount|shouye_20181018|PrimaryCate6"
-                                        data-ref="CatMenu_Search_100000014_1740_5204"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_1740.1">美妆</a>
-                                    /
-                                    <a title="个人清洁" href="http://search.yhd.com/c16750-0-0" target="_blank"
-                                        clstag="pageclick|keycount|shouye_20181018|PrimaryCate6"
-                                        data-ref="CatMenu_Search_100000014_1740_5205"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_1740.2">个人清洁</a>
-                                </p>
-                                <ul id="floatCategory1740" categoryid="1740" index="6">
-                                    <li class="text">
-                                        <a categoryid="2075" href="//search.yhd.com/c0-0-1003626/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate6_SecondaryCate1">美发护发</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="2088" href="//search.yhd.com/c0-0-1003628/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate6_SecondaryCate2">女性护理</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="2067" href="//search.yhd.com/c0-0-1003624/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate6_SecondaryCate3">沐浴清洁</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="2080" href="//search.yhd.com/c0-0-1003627/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate6_SecondaryCate4">口腔护理</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="2009" href="//search.yhd.com/c0-0-1003615/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate6_SecondaryCate5">面部护理</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="2025" href="//search.yhd.com/c0-0-1003616/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate6_SecondaryCate6">缤纷彩妆</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="2101" href="//search.yhd.com/c0-0-1003631/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate6_SecondaryCate7">身体护理</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="2094" href="//search.yhd.com/c0-0-1003629/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate6_SecondaryCate8">男士护理</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="2044" href="//search.yhd.com/c0-0-1003617/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate6_SecondaryCate9">美容工具</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column-item">
-                        <div class="category-item">
-                            <div class="inner">
-                                <p class="title" data-tpa="YHD_GLOBAl_HEADER_CATEGORY_7" data-mrt="1" categoryid="1737"
-                                    index="7">
-                                    <a title="女装" href="http://search.yhd.com/c0-0/k%25E5%25A5%25B3%25E8%25A3%2585/"
-                                        target="_blank" clstag="pageclick|keycount|shouye_20181018|PrimaryCate7"
-                                        data-ref="CatMenu_Search_100000014_1737_4146"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_1737.1">女装</a>
-                                    /
-                                    <a title="男装" href="http://search.yhd.com/c0-0/k%25E7%2594%25B7%25E8%25A3%2585/"
-                                        target="_blank" clstag="pageclick|keycount|shouye_20181018|PrimaryCate7"
-                                        data-ref="CatMenu_Search_100000014_1737_4147"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_1737.2">男装</a>
-                                    /
-                                    <a title="内衣" href="http://search.yhd.com/c0-0/k%25E5%2586%2585%25E8%25A1%25A3/"
-                                        target="_blank" clstag="pageclick|keycount|shouye_20181018|PrimaryCate7"
-                                        data-ref="CatMenu_Search_100000014_1737_4148"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_1737.3">内衣</a>
-                                    /
-                                    <a title="珠宝" href="http://search.yhd.com/c6144-0-0" target="_blank"
-                                        clstag="pageclick|keycount|shouye_20181018|PrimaryCate7"
-                                        data-ref="CatMenu_Search_100000014_1737_4149"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_1737.4">珠宝</a>
-                                </p>
-                                <ul id="floatCategory1737" categoryid="1737" index="7">
-                                    <li class="text">
-                                        <a categoryid="7480"
-                                            href="//search.yhd.com/c0-0/k%25E6%2597%25B6%25E5%25B0%259A%25E8%25A3%2599%25E8%25A3%2585/"
-                                            target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate7_SecondaryCate1">时尚裙装</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="7493"
-                                            href="//search.yhd.com/c0-0/k%25E5%25A5%25B3%25E5%25A3%25AB%25E4%25B8%258A%25E8%25A1%25A3/"
-                                            target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate7_SecondaryCate2">女士上衣</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="7510"
-                                            href="//search.yhd.com/c0-0/k%25E5%25A5%25B3%25E5%25A3%25AB%25E8%25A3%25A4%25E5%25AD%2590/"
-                                            target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate7_SecondaryCate3">女士裤子</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="7524" href="//search.yhd.com/c1345-0-0" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate7_SecondaryCate4">品质内衣</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="7541" href="//search.yhd.com/c1342-0-0" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate7_SecondaryCate5">型格男装</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="7560" href="//search.yhd.com/c6144-0-0" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate7_SecondaryCate6">珠宝首饰</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="7574" href="//search.yhd.com/c0-0-1004183/" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate7_SecondaryCate7">钟表/眼镜</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="category-item">
-                            <div class="inner">
-                                <p class="title" data-tpa="YHD_GLOBAl_HEADER_CATEGORY_8" data-mrt="1" categoryid="1739"
-                                    index="8">
-                                    <a title="鞋靴" href="http://search.yhd.com/c11729-0-0" target="_blank"
-                                        clstag="pageclick|keycount|shouye_20181018|PrimaryCate8"
-                                        data-ref="CatMenu_Search_100000014_1739_4049"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_1739.1">鞋靴</a>
-                                    /
-                                    <a title="箱包" href="http://search.yhd.com/c1672-0-0" target="_blank"
-                                        clstag="pageclick|keycount|shouye_20181018|PrimaryCate8"
-                                        data-ref="CatMenu_Search_100000014_1739_4050"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_1739.2">箱包</a>
-                                    /
-                                    <a title="运动户外" href="http://search.yhd.com/c1318-0-0" target="_blank"
-                                        clstag="pageclick|keycount|shouye_20181018|PrimaryCate8"
-                                        data-ref="CatMenu_Search_100000014_1739_4051"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_1739.3">运动户外</a>
-                                </p>
-                                <ul id="floatCategory1739" categoryid="1739" index="8">
-                                    <li class="text">
-                                        <a categoryid="7590" href="//search.yhd.com/c11731-0-0" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate8_SecondaryCate1">时尚女鞋</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="7614" href="//search.yhd.com/c2575-0-0" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate8_SecondaryCate2">潮流女包</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="7627" href="//search.yhd.com/c2615-0-0" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate8_SecondaryCate3">奢侈大牌</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="7640" href="//search.yhd.com/c2577-0-0" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate8_SecondaryCate4">功能箱包</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="7652" href="//search.yhd.com/c11730-0-0" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate8_SecondaryCate5">品质男鞋</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="7666" href="//search.yhd.com/c2576-0-0" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate8_SecondaryCate6">精品男包</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="7677" href="//search.yhd.com/c0-0-1003953/" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate8_SecondaryCate7">运动鞋服</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="7688" href="//search.yhd.com/c1463-0-0" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate8_SecondaryCate8">健身器材</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="7699" href="//search.yhd.com/c1318-0-0/" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate8_SecondaryCate9">户外装备</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column-item">
-                        <div class="category-item">
-                            <div class="inner">
-                                <p class="title" data-tpa="YHD_GLOBAl_HEADER_CATEGORY_9" data-mrt="1" categoryid="1443"
-                                    index="9">
-                                    <a title="手机" href="http://search.yhd.com/c9987-0-0" target="_blank"
-                                        clstag="pageclick|keycount|shouye_20181018|PrimaryCate9"
-                                        data-ref="CatMenu_Search_100000014_1443_3121"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_1443.1">手机</a>
-                                    /
-                                    <a title="数码" href="http://search.yhd.com/c652-0-0" target="_blank"
-                                        clstag="pageclick|keycount|shouye_20181018|PrimaryCate9"
-                                        data-ref="CatMenu_Search_100000014_1443_3122"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_1443.2">数码</a>
-                                    /
-                                    <a title="电脑办公" href="http://search.yhd.com/c670-0-0" target="_blank"
-                                        clstag="pageclick|keycount|shouye_20181018|PrimaryCate9"
-                                        data-ref="CatMenu_Search_100000014_1443_3123"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_1443.3">电脑办公</a>
-                                </p>
-                                <ul id="floatCategory1443" categoryid="1443" index="9">
-                                    <li class="text">
-                                        <a categoryid="1444" href="//search.yhd.com/c0-0-1005412/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate9_SecondaryCate1">手机</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="1445" href="//search.yhd.com/c0-0-1004136/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate9_SecondaryCate2">手机配件</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="1459" href="//search.yhd.com/c0-0-1004268/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate9_SecondaryCate3">摄影影像</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="1479" href="//search.yhd.com/c0-0-1004357/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate9_SecondaryCate4">影音电教</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="1485" href="//search.yhd.com/c0-0-1004388/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate9_SecondaryCate5">智能设备</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="1468" href="//search.yhd.com/c0-0-1004304/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate9_SecondaryCate6">数码配件</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="1895" href="//search.yhd.com/c0-0-1003312/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate9_SecondaryCate7">电脑整机</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="1902" href="//search.yhd.com/c0-0-1003329/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate9_SecondaryCate8">网络外设</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="1920" href="//search.yhd.com/c0-0-1003407/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate9_SecondaryCate9">办公设备</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="category-item">
-                            <div class="inner">
-                                <p class="title" data-tpa="YHD_GLOBAl_HEADER_CATEGORY_10" data-mrt="1" categoryid="1749"
-                                    index="10">
-                                    <a title="家用电器"
-                                        href="http://search.yhd.com/c737-0-0/mbname-b/a-s1-v4-p1-price-d0-f0-m1-rt0-pid-mid0-color-size-k/"
-                                        target="_blank" clstag="pageclick|keycount|shouye_20181018|PrimaryCate10"
-                                        data-ref="CatMenu_Search_100000014_1749_4980"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_1749.1">家用电器</a>
-                                    /
-                                    <a title="汽车用品" href="http://search.yhd.com/c6728-0-0" target="_blank"
-                                        clstag="pageclick|keycount|shouye_20181018|PrimaryCate10"
-                                        data-ref="CatMenu_Search_100000014_1749_4981"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_1749.2">汽车用品</a>
-                                </p>
-                                <ul id="floatCategory1749" categoryid="1749" index="10">
-                                    <li class="text">
-                                        <a categoryid="2420" href="//search.yhd.com/c0-0-1004270/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate10_SecondaryCate1">厨房小电</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="2428" href="//search.yhd.com/c0-0-1004301/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate10_SecondaryCate2">生活电器</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="2435" href="//search.yhd.com/c0-0-1004354/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate10_SecondaryCate3">个护健康</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="4530" href="//search.yhd.com/c0-0-1005509/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate10_SecondaryCate4">电视空调</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="4929" href="//search.yhd.com/c0-0-1004806/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate10_SecondaryCate5">厨卫大电</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="2411" href="//search.yhd.com/c0-0-1004239/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate10_SecondaryCate6">冰箱</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="5429" href="//search.yhd.com/c0-0-1004241/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate10_SecondaryCate7">洗衣机</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="2443" href="//search.yhd.com/c0-0-1005430/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate10_SecondaryCate8">维修保养</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="8325" href="//search.yhd.com/c6745-0-0" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate10_SecondaryCate9">汽车装饰</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="5526" href="//search.yhd.com/c0-0-1005437/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate10_SecondaryCate10">车载产品</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column-item">
-                        <div class="category-item">
-                            <div class="inner">
-                                <p class="title" data-tpa="YHD_GLOBAl_HEADER_CATEGORY_11" data-mrt="1" categoryid="1753"
-                                    index="11">
-                                    <a title="医药/保健滋补/成人" href="http://search.yhd.com/c9192-0-0" target="_blank"
-                                        clstag="pageclick|keycount|shouye_20181018|PrimaryCate11"
-                                        data-ref="CatMenu_Search_100000014_1753_4687"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_1753.1">医药/保健滋补/成人</a>
-                                </p>
-                                <ul id="floatCategory1753" categoryid="1753" index="11">
-                                    <li class="text">
-                                        <a categoryid="5107" href="//search.yhd.com/c0-0-1004849/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate11_SecondaryCate1">营养健康</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="2498" href="//search.yhd.com/c0-0-1004493/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate11_SecondaryCate2">营养成分</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="2477" href="//search.yhd.com/c0-0-1004462/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate11_SecondaryCate3">传统滋补</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="2492" href="//search.yhd.com/c0-0-1004478/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate11_SecondaryCate4">成人用品</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="5084" href="//search.yhd.com/c0-0-1004717/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate11_SecondaryCate5">家用器械</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="2532" href="//search.yhd.com/c0-0-1004406/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate11_SecondaryCate6">隐形眼镜</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="category-item">
-                            <div class="inner">
-                                <p class="title" data-tpa="YHD_GLOBAl_HEADER_CATEGORY_12" data-mrt="1" categoryid="2555"
-                                    index="12">
-                                    <a title="图书" href="http://search.yhd.com/c1713-0-0" target="_blank"
-                                        clstag="pageclick|keycount|shouye_20181018|PrimaryCate12"
-                                        data-ref="CatMenu_Search_100000014_2555_4655"
-                                        data-tc="0.0.TRACKER_CODE.CatMenu_Search_100000014_2555.1">图书</a>
-                                </p>
-                                <ul id="floatCategory2555" categoryid="2555" index="12">
-                                    <li class="text">
-                                        <a categoryid="8212" href="//search.yhd.com/c3263-0-0" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate12_SecondaryCate1">少儿</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="2556" href="//search.yhd.com/c0-0-1004443/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate12_SecondaryCate2">教育</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="5322" href="//search.yhd.com/c0-0-1004591/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate12_SecondaryCate3">文艺</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="2560" href="//search.yhd.com/c0-0-1004470/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate12_SecondaryCate4">经管励志</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="6584" href="//search.yhd.com/c0-0-1004641/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate12_SecondaryCate5">人文社科</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="6585" href="//search.yhd.com/c0-0-1004637/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate12_SecondaryCate6">生活</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="6586" href="//search.yhd.com/c0-0-1004627/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate12_SecondaryCate7">科技</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="5496" href="//search.yhd.com/c0-0-1004490/" target="_blank" nav-type="5"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate12_SecondaryCate8">刊/原版</a>
-                                    </li>
-                                    <li class="text">
-                                        <a categoryid="6587" href="//search.yhd.com/c4053-0-0/" target="_blank" nav-type="3"
-                                            clstag="pageclick|keycount|shouye_20181018|PrimaryCate12_SecondaryCate9">音像</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+        <ul class="navFist">
+            <li id="all"><i class="iconfont icon-sort"></i>全部类目<i class="iconfont icon-jiantou-xia"></i></li>
+            <li class="topText"><a href="#">领金币</a></li>
+            <li class="topText"><a href="#">领劵中心</a></li>
+            <li class="topText"><a href="#">充值</a></li>
+            <li class="topText"><a href="#">超级单品</a></li>
+            <li class="topText"><a href="#">超级品牌</a></li>
+            <li class="topText"><a href="#">超级品类</a></li>
+        </ul>
+        <div class="allShopp">
+            <div>
+                <h2><a href="#">全球进口</a></h2>
+                <ul>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                </ul>
+                <h2><a href="#">全球进口</a></h2>
+                <ul>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2><a href="#">全球进口</a></h2>
+                <ul>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                </ul>
+                <h2><a href="#">全球进口</a></h2>
+                <ul>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2><a href="#">全球进口</a></h2>
+                <ul>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                </ul>
+                <h2><a href="#">全球进口</a></h2>
+                <ul>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2><a href="#">全球进口</a></h2>
+                <ul>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                </ul>
+                <h2><a href="#">全球进口</a></h2>
+                <ul>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2><a href="#">全球进口</a></h2>
+                <ul>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                </ul>
+                <h2><a href="#">全球进口</a></h2>
+                <ul>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                    <li><a href="#">乳品生鲜</a></li>
+                    <li><a href="#">饼干甜点</a></li>
+                </ul>
             </div>
         </div>
-        <ul class="nav-list">
-            <li><a href="#">抢金币</a></li>
-            <li><a href="#">金币签到</a></li>
-            <li><a href="#">充值</a></li>
-            <li><a href="#">超级单品</a></li>
-            <li><a href="#">超级品牌</a></li>
-            <li><a href="#">超级品类</a></li>
-            <li><a href="#">领劵中心</a></li>
-        </ul>
     </div>
     <!-- 轮播图 -->
-    <div class="wrapper">
-        <ul id="box">
-            <li class="active"><img src="image/banner.jpg" alt="" /></li>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
+    <div class="rotationChart clearfix">
+        <ul>
+            <li><a href="#"><img src="index/f4682aead8816acd.jpg"></a></li>
+            <li><a href="#"><img src="index/f8ce169096b0cd58.jpg"></a></li>
+            <li><a href="#"><img src="index/78ff49539a8b3714.jpg"></a></li>
+            <li><a href="#"><img src="index/0233ea18489a9efe.jpg"></a></li>
         </ul>
-        <ol id="uu">
-            <li class="current">1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
+        <ol style="z-index: 5;">
+            <li class="current">鲜花礼品</li>
+            <li>酒水饮料</li>
+            <li>生鲜</li>
+            <li>亿玼</li>
         </ol>
     </div>
-    <script src="js/index.js"></script>
-    <script>
-        swiper.init('.wrapper');
-    </script>
+    <!--主体-->
+    <div class="main">
+        <div class="container">
+            <!--新人有礼-->
+            <img src="img/new.png" />
+            <!--超级单品-->
+            <div class="single">
+                <div class="singleShop">
+                    <img src="img/single_img.png" style="height: 50px;"/>
+                    <ul class="limitedTime clearfix">
+                        <li>限时</li>
+                        <li>限量</li>
+                        <li>品质</li>
+                        <li>超值</li>
+                    </ul>
+                    <span class="clock"><i class="iconfont icon-04"></i>距结束仅剩</span>
+                    <div class="time">
+                        <span class="hour">00</span><i>:</i><span class="minute">00</span><i>:</i><span class="second">00</span>
+                    </div>
+                </div>
+                <div class="goods">
+                </div>
+            </div>
+        <!--超级品牌-->
+            <div class="brand">
+                <div class="brand_left">
+                    <h3>超级品牌</h3>
+                    <span>/超级品牌/精品汇聚</span>
+                        <img src="img/background1.jpg" id="aa"/>
+                        <div class="brand_top">
+                            <img src="img/backgroundlogo.jpg" class="logotu"/>
+                            <ul>
+                                <li class="one">福临门</li>
+                                <li class="two">低至五折</li>
+                                <li class="three">进入<i class="iconfont icon-icon_arrow_right"></i></li>
+                            </ul>
+                            <div class="tupian">
+                            <img src="img/shop1.jpg" class="shop"/>
+                            <img src="img/shop2.jpg" class="shop"/>
+                            <img src="img/shop3.jpg" class="shop"/>
+                            </div>
+                    </div>
+                    <img src="img/backgroundlogo1.jpg" id="aa"/>
+                        <div class="brand_bottom">
+                            <img src="img/backgroundlogo.jpg" class="logotu"/>
+                            <ul>
+                                <li class="one">福临门</li>
+                                <li class="two">低至五折</li>
+                                <li class="three">进入<i class="iconfont icon-icon_arrow_right"></i></li>
+                            </ul>
+                            <div class="tupian">
+                            <img src="img/shop7.jpg" class="shop"/>
+                            <img src="img/shop6.jpg" class="shop"/>
+                            <img src="img/shop5.jpg" class="shop"/>
+                            </div>
+                    </div>
+                </div>
+                <div class="brand_right">
+                    <h3>超级品牌</h3>
+                    <span>/超级品牌/精品汇聚</span>
+                        <img src="img/backgroundlogo2.jpg" id="aa"/>
+                        <div class="brand_top">
+                            <img src="img/backgroundlogo.jpg" class="logotu"/>
+                            <ul>
+                                <li class="one">福临门</li>
+                                <li class="two">低至五折</li>
+                                <li class="three">进入<i class="iconfont icon-icon_arrow_right"></i></li>
+                            </ul>
+                            <div class="tupian">
+                            <img src="img/shop4.jpg" class="shop"/>
+                            <img src="img/shop8.jpg" class="shop"/>
+                            <img src="img/shop9.jpg" class="shop"/>
+                            </div>
+                    </div>
+                    <img src="img/backgroundlogo3.jpg" id="aa"/>
+                        <div class="brand_bottom">
+                            <img src="img/backgroundlogo.jpg" class="logotu"/>
+                            <ul>
+                                <li class="one">福临门</li>
+                                <li class="two">低至五折</li>
+                                <li class="three">进入<i class="iconfont icon-icon_arrow_right"></i></li>
+                            </ul>
+                            <div class="tupian">
+                            <img src="img/shop10.jpg" class="shop"/>
+                            <img src="img/shop4.jpg" class="shop"/>
+                            <img src="img/shop5.jpg" class="shop"/>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        <!--甄选新鲜-->
+            <div class="fresh">
+                <h2>甄选新鲜</h2><span class="text">/每一口都是小幸福</span>
+                <div class="freshImg">
+                    <ul>
+                        <li><a href="#">美味水果</a></li>
+                        <li><a href="#">海鲜水产</a></li>
+                        <li><a href="#">新鲜蔬菜</a></li>
+                        <li><a href="#">猪牛羊肉</a></li>
+                        <li><a href="#">冷冻食品</a></li>
+                        <li><a href="#">乳品冷饮</a></li>
+                    </ul>
+                </div>
+                <div class="coupon">
+                    <div class="coupon1">
+                        <ul>
+                            <span><a href="#">活色生鲜节</a></span>
+                            <i><a href="#">部分领劵满减</a></i>
+                            <li><a href="#">立即购买</a></li>
+                        </ul>
+                        <img src="img/fresh2.png">
+                    </div>
+                    <div class="coupon2">
+                        <ul>
+                            <span><a href="#">佳沛金奇异果</a></span>
+                            <p><a href="#">￥49.9</a></p>
+                            <img src="img/fresh1.png">
+                            <li>必抢</li>
+                        </ul>
+                        <ul>
+                            <span><a href="#">佳沛金奇异果</a></span>
+                            <p><a href="#">￥49.9</a></p>
+                            <img src="img/fresh1.png">
+                            <li>必抢</li>
+                        </ul>
+                    </div>
+                    <div class="coupon2">
+                        <ul>
+                            <span><a href="#">佳沛金奇异果</a></span>
+                            <p><a href="#">￥49.9</a></p>
+                            <img src="img/fresh1.png">
+                            <li>必抢</li>
+                        </ul>
+                        <ul>
+                            <span><a href="#">佳沛金奇异果</a></span>
+                            <p><a href="#">￥49.9</a></p>
+                            <img src="img/fresh1.png">
+                            <li>必抢</li>
+                        </ul>
+                    </div>
+                    <div class="coupon1">
+                        <ul>
+                            <span><a href="#">活色生鲜节</a></span>
+                            <i><a href="#">部分领劵满减</a></i>
+                            <li><a href="#">立即购买</a></li>
+                        </ul>
+                        <img src="img/fresh2.png">
+                    </div>
+                </div>
+                <!--唇唇欲动-->
+                <div class="like">
+                    <h3>唇唇欲动</h3>
+                    <p>胃之所向   皆美好</p>
+                    <ul>
+                        <li>
+                            <span>TOP1</span>
+                            <img src="img/fresh3.jpg"> 
+                        </li>
+                        <li>
+                            <span>TOP2</span>
+                            <img src="img/fresh1.png"> 
+                        </li>
+                        <li>
+                            <span>TOP3</span>
+                            <img src="img/fresh2.png"> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <!--科技质感-->
+            <div class="fresh">
+                <h2>科技质感</h2><span class="text">/营造美好生活</span>
+                <div class="freshImg  phone">
+                    <ul>
+                        <li><a href="#">热售手机</a></li>
+                        <li><a href="#">轻薄电脑</a></li>
+                        <li><a href="#">厨房电器</a></li>
+                        <li><a href="#">生活电器</a></li>
+                        <li><a href="#">娱乐音影</a></li>
+                        <li><a href="#">办公设备</a></li>
+                    </ul>
+                </div>
+                <div class="coupon">
+                    <div class="coupon1">
+                        <ul>
+                            <span><a href="#">大牌让利</a></span>
+                            <i><a href="#">爆款直降</a></i>
+                            <li><a href="#">立即购买</a></li>
+                        </ul>
+                        <img src="img/phone1.png">
+                    </div>
+                    <div class="coupon2">
+                        <ul>
+                            <span><a href="#">荣耀全屏手机</a></span>
+                            <p><a href="#">￥1199</a></p>
+                            <img src="img/phone2.jpg">
+                        </ul>
+                        <ul>
+                            <span><a href="#">小米平衡车</a></span>
+                            <p><a href="#">￥2149</a></p>
+                            <img src="img/back3.jpg">
+                        </ul>
+                    </div>
+                    <div class="coupon2">
+                        <ul>
+                            <span><a href="#">荣耀全屏手机</a></span>
+                            <p><a href="#">￥1199</a></p>
+                            <img src="img/phone2.jpg">
+                        </ul>
+                        <ul>
+                            <span><a href="#">小米平衡车</a></span>
+                            <p><a href="#">￥2149</a></p>
+                            <img src="img/back3.jpg">
+                        </ul>
+                    </div>
+                    <div class="coupon1">
+                        <ul>
+                            <span><a href="#">大牌让利</a></span>
+                            <i><a href="#">爆款直降</a></i>
+                            <li><a href="#">立即购买</a></li>
+                        </ul>
+                        <img src="img/phone1.png">
+                    </div>
+                </div>
+                <!--唇唇欲动-->
+                <div class="like">
+                    <h3>手机通讯</h3>
+                    <p>狂欢就要大视野</p>
+                    <ul>
+                        <li>
+                            <span>TOP1</span>
+                            <img src="img/phone1.png"> 
+                        </li>
+                        <li>
+                            <span>TOP2</span>
+                            <img src="img/phone2.jpg"> 
+                        </li>
+                        <li>
+                            <span>TOP3</span>
+                            <img src="img/phone1.png"> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_top container">
+            <ul>
+                <li>
+                    <img src="img/zp.jpg" />
+                    <span>正品保障</span>
+                    
+                </li>
+                <li>
+                    <img src="img/sh.jpg" />
+                    <span>满86包邮</span>
+                    
+                </li>
+                <li>
+                    <img src="img/dz.jpg" />
+                    <span>售后无忧</span>
+                    
+                </li>
+                <li>
+                    <img src="img/sj.jpg" />
+                    <span>准时送达</span>
+                    
+                </li>
+            </ul>
+        </div>
+        <div class="footer_middle container">
+            <div class="middle_left">
+                <dl>
+                    <dt>新手入门</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员制度</a></dd>
+                    <dd><a href="#">订单查询</a></dd>
+                    <dd><a href="#">服务协议及隐私说明</a></dd>
+                    <dd><a href="#">网站地图</a></dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd><a href="#">货到付款</a></dd>
+                    <dd><a href="#">网上支付</a></dd>
+                    <dd><a href="#">礼品卡支付</a></dd>
+                    <dd><a href="#">其他支付</a></dd>
+                </dl>
+                <dl>
+                    <dt>配送服务</dt>
+                    <dd><a href="#">配送进度查询</a></dd>
+                    <dd><a href="#">商品验货与签收</a></dd>
+                </dl>
+                <dl>
+                    <dt>售后保障</dt>
+                    <dd><a href="#">退货政策</a></dd>
+                    <dd><a href="#">发票制度</a></dd>
+                    <dd><a href="#">帮助中心</a></dd>
+                </dl>
+            </div>
+            <div class="middle_right">
+                <div>
+                    <span>APP更优惠</span>
+                    <img src="img/qryhd.png" />
+                </div>
+                <div>
+                    <span>加微信查订单</span>
+                    <img src="img/erweima.jpg" />
+                </div>
+            </div>
+        </div>
+        <div class="foot_bottom">
+        <p><a href="#">泸ICP备16050468 </a>&nbsp;|&nbsp;<a href="#"> 经营证照  </a>&nbsp;|&nbsp;<a href="#"> 互联网药品信息服务资格证  </a>&nbsp;|&nbsp;<a href="#"> 违证和不良信息举报电话:0527-88100253 </a>&nbsp;|&nbsp;<a href="#"> 泸B2-20270039 </a>&nbsp;|&nbsp;<a href="#"> 泸公安网备 310105020002939号  </a>&nbsp;|&nbsp;<a href="#"> 友情链接  </a>&nbsp;|&nbsp;<a href="#"> 出版物经营许可证  </a>&nbsp;|&nbsp;<a href="#"> 增值电信物业经营许可证</a></p>
+        <p class="copy">Copyright&copy; 1号店网上超市  2017-2018. All Rights Reserved</p>
+        <div class="logoCopy">
+            <a href="#"><img src="img/logoCompe1.jpg" /></a>
+            <a href="#"><img src="img/logoCompe2.png" /></a>
+            <a href="#"><img src="img/logoCompe3.jpg" /></a>
+            <a href="#"><img src="img/logoCompe4.jpg" /></a>
+            <a href="#"><img src="img/logoCompe5.jpg" /></a>
+        </div>
+        </div>
+    </div>
+
 </body>
 </html>

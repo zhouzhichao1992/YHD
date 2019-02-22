@@ -1,0 +1,66 @@
+[
+ 	{
+ 		"shopId" : "1",
+ 		"src":"goodsImg1.jpg",
+ 		"uName" : "饼干",
+ 		"price":"137",
+ 		"money":"220"
+ 	},
+ 	{
+ 		"shopId" : "2",
+ 		"src":"goodsImg2.jpg",
+ 		"uName" : "飞利蒲吹风机",
+ 		"price":"149",
+ 		"money":"239"
+ 	},
+ 	{
+ 		"shopId" : "3",
+ 		"src":"goodsImg3.jpg",
+ 		"uName" : "高露洁牙膏",
+ 		"price":"29",
+ 		"money":"42"
+ 	},
+ 	{
+ 		"shopId" : "4",
+ 		"src":"goodsImg4.jpg",
+ 		"uName" : "鲁花 食用油",
+ 		"progressBar":"80",
+ 		"price":"155",
+ 		"money":"200"
+ 	},
+ 	{
+ 		"shopId" : "5",
+ 		"src":"goodsImg5.jpg",
+ 		"uName" : "香米",
+ 		"price":"87",
+ 		"money":"220"
+ 	},
+ 	{
+ 		"shopId" : "6",
+ 		"src":"goodsImg6.jpg",
+ 		"uName" : "高档红酒",
+ 		"price":"397",
+ 		"money":"520"
+ 	},
+ 	{
+ 		"shopId" : "7",
+ 		"src":"goodsImg7.jpg",
+ 		"uName" : "苹果醋",
+ 		"price":"47",
+ 		"money":"120"
+ 	},
+ 	{
+ 		"shopId" : "8",
+ 		"src":"goodsImg8.jpg",
+ 		"uName" : "贵州茅台",
+ 		"price":"217",
+ 		"money":"220"
+ 	},
+ 	{
+ 		"shopId" : "9",
+ 		"src":"goodsImg9.jpg",
+ 		"uName" : "欧丽薇兰 纯正橄榄油",
+ 		"price":"197",
+ 		"money":"220"
+ 	}
+]

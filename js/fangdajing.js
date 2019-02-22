@@ -1,19 +1,19 @@
-$(function(){
+/*$(function(){
 	$("#header").load("../indexHeader/index.html");	
 	$("#footer").load("../indexFooter/index.html");	
 	//改变图片
-	var hx = location.href;
-	var bid = hx.split("?")[1].split("&")[0].split("=")[1];
-	$.ajax({
-		url : "../indexmain/index.json",
-		success : function(res,status,xhr){
-			$("#Bimg").attr("src","../img/"+res[bid-1].src);
-//			../img/tigerDome1.jpg
-			$("#imgMove").attr("src","../img/"+res[bid-1].src);
-			$("#magnT").html(res[bid-1].uName);
-			$("#price").html(res[bid-1].price);		
-		},
-	});
+	// var hx = location.href;
+	// var bid = hx.split("?")[1].split("&")[0].split("=")[1];
+// 	$.ajax({
+// 		url : "../indexmain/index.json",
+// 		success : function(res,status,xhr){
+// 			$("#Bimg").attr("src","../img/"+res[bid-1].src);
+// //			../img/tigerDome1.jpg
+// 			$("#imgMove").attr("src","../img/"+res[bid-1].src);
+// 			$("#magnT").html(res[bid-1].uName);
+// 			$("#price").html(res[bid-1].price);		
+// 		},
+// 	});
 	//点击加数量
 	$("#add").click(function(){
 		var num = $("#num").html();
@@ -81,7 +81,7 @@ $(function(){
 //		var userName = decodeURI(location.href.split("&")[1].split("=")[1]);
 		$(location).attr("href","../goCar/index.html?uName="+uname);
 	})
-})
+})*/
 window.onload = function(){
 	//放大镜
 	var magnL = document.getElementsByClassName("magnL")[0]; 
